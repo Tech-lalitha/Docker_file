@@ -4,16 +4,16 @@
 ### 1.Login into Ec2 Instances Then Run this Commands
 
 **#Update The Ec2 instances
-sudo apt update -y
+        sudo apt update -y
 
 #Install Docker
-sudo apt install docker.io -y
+        sudo apt install docker.io -y
 
 #Checking docker version
-docker --version
+        docker --version
 
 #To Check Docker is Running Or Not 
-sudo systemctl status docker**
+        sudo systemctl status docker**
 
 
 ### 2. Running the Docker
@@ -26,7 +26,8 @@ permission denied while trying to connect to the docker API at unix:///var/run/d
 
  - **Now Run This command**
  
-      ```sudo usermod -aG docker ubuntu```
+      ```bash
+      sudo usermod -aG docker ubuntu
 
 👉 This command means:
  - is used in Linux (like Ubuntu) to give a user permission to use
