@@ -3,20 +3,25 @@
 
 ### 1.Login into Ec2 Instances Then Run this Commands
 
-#Update The Ec2 instances
-        `sudo apt update -y`
+### Update The Ec2 instances
+```bash
+        sudo apt update -y
+```
 
-#Install Docker
-        ```bash sudo apt install docker.io -y
+### Install Docker
+```bash
+     bash sudo apt install docker.io -y
+```
 
-#Checking docker version
-        ```bash
+### Checking docker version
+```bash
         docker --version
+```
 
-#To Check Docker is Running Or Not 
-        ```bash
+### To Check Docker is Running Or Not 
+```bash
         sudo systemctl status docker .
-
+```
 
 ### 2. Running the Docker
 
