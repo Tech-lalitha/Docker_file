@@ -1,5 +1,98 @@
 # DOCKER
-## 	Containers 
+## Install Docker
+
+### 1.Login into Ec2 Instances Then Run this Commands
+-------------------------------------
+**#Update The Ec2 instances
+sudo apt update -y
+
+#Install Docker
+sudo apt install docker.io -y
+
+#Checking docker version
+docker --version
+
+#To Check Docker is Running Or Not 
+**sudo systemctl status docker
+
+-------------------------------------
+
+### 2. Running the Docker
+
+ubuntu@ip-172-31-19-46:~$ **docker run hello-world**
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+
+
+
+ - **Now Run This command**
+ 
+sudo usermod -aG docker ubuntu
+
+      **👉 This command means:
+         => is used in Linux (like Ubuntu) to give a user permission to use
+         Docker without sudo.
+ 
+         => “Add the user ubuntu to the docker group, so they can run Docker
+         commands without using sudo.”**
+
+
+
+## 3. Local Deployment using Docker”
+
+ ----------------------------------------
+git clone https://github.com/Tech-lalitha/Docker_file.git
+
+  ubuntu@ip-172-31-19-46:~$ ls
+  Docker_file
+
+  ubuntu@ip-172-31-19-46:~$ cd Docker_file
+  ubuntu@ip-172-31-19-46:~/Docker_file$ ls
+  README.md  example
+
+  ubuntu@ip-172-31-19-46:~/Docker_file$ cd example
+  ubuntu@ip-172-31-19-46:~/Docker_file/example$ ls
+  first_files
+
+  ubuntu@ip-172-31-19-46:~/Docker_file/example$ cd first_files
+  ubuntu@ip-172-31-19-46:~/Docker_file/example/first_files$ ls
+  Dockerfile  app.py
+--------------------------------------------------
+
+
+      ==> Run This command
+ 
+docker build -t bhumireddylalitha/my-sec-file:latest .
+
+#Now you will check
+docker run -it bhumireddylalitha/my-sec-file:latest
+Hello World
+welcome to our world
+
+#seeing docker image with command 
+docker images
+
+
+
+  
+
+Login into DockerHub
+
+#Run this command
+   docker login
+
+
+
+Now Push the Docker Image into DockerHub
+
+
+docker push bhumireddylalitha/my-sec-file:latest
+
+
+Now open Docker Hub in Brower
+
+   now image get push into docker Hub
+
+## 	Containers 
 A container is a lightweight, portable unit of software that packages an application along with everything it needs to run—such as code, libraries, dependencies, and configuration files. This ensures the application works consistently across different computing environments.
 
 ---
@@ -27,70 +120,51 @@ Instead of running a full operating system:
 - keeping applications isolated.
 
 ### Components of a Container:
-•	🧩 Application code 
-•	📚 Libraries and dependencies 
-•	⚙️ Runtime environment 
-•	📝 Configuration files
+- 🧩 Application code 
+-	📚 Libraries and dependencies 
+- ⚙️ Runtime environment 
+- 📝 Configuration files
 
 
 
 
-🖥️ Containers vs Virtual Machines
-Feature	Containers	Virtual Machines
-Size	Lightweight (MBs)	Heavy (GBs)
-Startup Time	Seconds	Minutes
-Performance	High	Moderate
-OS Requirement	Shares host OS	Requires full OS
-Resource Usage	Efficient	Resource-intensive
+## 🖥️ Containers vs Virtual Machines
+|Feature	|Containers	 |Virtual Machines
+|Size	|Lightweight (MBs)	| Heavy (GBs)
+|Startup Time	|Seconds	| Minutes
+|Performance	| High	| Moderate
+|OS Requirement |	Shares host OS |	Requires full OS
+|Resource Usage	|Efficient	 |Resource-intensive
 
 
  
 
+## 🐳 Popular Container Tools
+-  Docker – The most widely used container platform. 
+- 	Kubernetes – Automates deployment, scaling, and management of containers. 
+- 	Podman – A daemonless alternative to Docker. 
+- 	Red Hat OpenShift – An enterprise container platform.
 
 
 
 
-🐳 Popular Container Tools
-•	Docker – The most widely used container platform. 
-•	Kubernetes – Automates deployment, scaling, and management of containers. 
-•	Podman – A daemonless alternative to Docker. 
-•	Red Hat OpenShift – An enterprise container platform.
-
-
-
-
-🌍 Example Use Case
+## 🌍 Example Use Case
 Imagine you develop a Python web application.
-Without Containers:
-•	It may fail on another system due to missing libraries or version conflicts. 
-With Containers:
-•	You package the app and dependencies into a container. 
-•	It runs reliably on any environment—your laptop, a server, or the cloud.
-
-
-
-💡 Interview Answer
-“A container is a lightweight, standalone, and executable package that includes an application and its dependencies, enabling it to run consistently across different environments. Tools like Docker are commonly used to create and manage containers.”
-
-
-
-
-
-🐳 Docker Container Lifecycle
-
-Build Image → Create Container → Run → (Pause/Unpause) → Stop/Kill → Remove
+### Without Containers:
+- It may fail on another system due to missing libraries or version conflicts. 
+### With Containers:
+-	You package the app and dependencies into a container. 
+-	It runs reliably on any environment—your laptop, a server, or the cloud.
 
  
 
-💡 Simple Real-Life Analogy
-•	Image = Recipe 🍲 
-•	Container = Cooked food 🍛 
-•	Run = Eating / Using 
-•	Stop = Keep it aside 
-•	Remove = Throw it away 
-🐳 1. What is Docker?
-Answer:
-Docker is a platform used to build, package, and run applications in containers. Containers include everything needed (code + dependencies), so apps run the same everywhere.
+## 💡 Simple Real-Life Analogy
+-	Image = Recipe 🍲 
+-	Container = Cooked food 🍛 
+-	Run = Eating / Using 
+-	Stop = Keep it aside 
+-	Remove = Throw it away 
+
 
 
 
