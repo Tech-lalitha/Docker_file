@@ -1,27 +1,32 @@
- ##DOCKER
-	Containers 
+# DOCKER
+## 	Containers 
 A container is a lightweight, portable unit of software that packages an application along with everything it needs to run—such as code, libraries, dependencies, and configuration files. This ensures the application works consistently across different computing environments.
 
-
-#📦 Simple Definition
-A container is like a ready-to-run box that contains an application and all its requirements.
+---
+## 📦 Simple Definition
+> A container is like a ready-to-run box that contains an application and all its requirements.
 It eliminates the classic problem:
-“It works on my machine but not on yours.”
+> “It works on my machine but not on yours.”
 
 
 
-#🧳 Real-Life Analogy: Shipping Containers
+## 🧳 Real-Life Analogy: Shipping Containers
 Think of software containers like shipping containers used in global trade:
-Shipping Container	Software Container
-Carries goods	Carries applications
-Standardized for transport	Standardized for deployment
-Moves easily across ships, trucks, and trains	Runs on any system with a container engine
-Protects contents	Isolates applications
+|Shipping Container	|Software Container |
+|--------------------|--------------------|
+|Carries goods	    |Carries applications   |
+|Standardized for transport |	Standardized for deployment |
+|Moves easily across ships, trucks, and trains	|  Runs on any system with a container engine |
+|Protects contents	 |Isolates applications |
 
 
-⚙️ How Containers Work
-Containers use operating system virtualization. Instead of running a full operating system, they share the host OS kernel while keeping applications isolated.
-Components of a Container:
+## ⚙️ How Containers Work
+Containers use operating system virtualization**.
+Instead of running a full operating system:
+- they share the host OS kernel
+- keeping applications isolated.
+
+### Components of a Container:
 •	🧩 Application code 
 •	📚 Libraries and dependencies 
 •	⚙️ Runtime environment 
