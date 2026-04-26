@@ -68,7 +68,7 @@ permission denied while trying to connect to the docker API at unix:///var/run/d
 
 
 
-       **Run This command**
+- Run This command
 ```bash
 docker build -t bhumireddylalitha/my-sec-file:latest .
 
@@ -86,7 +86,7 @@ docker images**
 
 ## Login into DockerHub
 
-** #Run this command
+- Run this command
 ```bash
     docker login **
 ```
@@ -101,12 +101,11 @@ docker push bhumireddylalitha/my-sec-file:latest
 
    ==> now image get push into docker Hub
 
-====================================================================================================
-
+---
 ## 	Containers 
 A container is a lightweight, portable unit of software that packages an application along with everything it needs to run—such as code, libraries, dependencies, and configuration files. This ensures the application works consistently across different computing environments.
 
----
+
 ## 📦 Simple Definition
 > A container is like a ready-to-run box that contains an application and all its requirements.
 It eliminates the classic problem:
