@@ -18,7 +18,7 @@ sudo systemctl status docker**
 
 ### 2. Running the Docker
 
-ubuntu@ip-172-31-19-46:~$ **docker run hello-world**
+> docker run hello-world 
 permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
 
 
