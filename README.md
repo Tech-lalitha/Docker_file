@@ -3,22 +3,22 @@
 
 ### 1.Login into Ec2 Instances Then Run this Commands
 
-### Update The Ec2 instances
+- Update The Ec2 instances
 ```bash
         sudo apt update -y
 ```
 
-### Install Docker
+- Install Docker
 ```bash
      bash sudo apt install docker.io -y
 ```
 
-### Checking docker version
+- Checking docker version
 ```bash
         docker --version
 ```
 
-### To Check Docker is Running Or Not 
+-  To Check Docker is Running Or Not 
 ```bash
         sudo systemctl status docker .
 ```
@@ -33,8 +33,9 @@ permission denied while trying to connect to the docker API at unix:///var/run/d
 
  - **Now Run This command**
  
-      ```bash
+```bash
       sudo usermod -aG docker ubuntu
+```
 
 👉 This command means:
  - is used in Linux (like Ubuntu) to give a user permission to use
@@ -45,30 +46,31 @@ permission denied while trying to connect to the docker API at unix:///var/run/d
 
 
 ## 3. Local Deployment using Docker”
-
+```bash 
  
 **git clone https://github.com/Tech-lalitha/Docker_file.git
 
-  ubuntu@ip-172-31-19-46:~$ ls
-  Docker_file
+  ls
+  #Docker_file
 
-  ubuntu@ip-172-31-19-46:~$ cd Docker_file
-  ubuntu@ip-172-31-19-46:~/Docker_file$ ls
-  README.md  example
+  cd Docker_file
+  ~/Docker_file$ ls
+  #README.md  example
 
-  ubuntu@ip-172-31-19-46:~/Docker_file$ cd example
-  ubuntu@ip-172-31-19-46:~/Docker_file/example$ ls
-  first_files
+  ~/Docker_file$ cd example
+  ~/Docker_file/example$ ls
+  #first_files
 
-  ubuntu@ip-172-31-19-46:~/Docker_file/example$ cd first_files
-  ubuntu@ip-172-31-19-46:~/Docker_file/example/first_files$ ls
-  Dockerfile  app.py**
+  ~/Docker_file/example$ cd first_files
+  ~/Docker_file/example/first_files$ ls
+  #Dockerfile  app.py**
+```
 
 
 
        **Run This command**
- 
-**docker build -t bhumireddylalitha/my-sec-file:latest .
+```bash
+docker build -t bhumireddylalitha/my-sec-file:latest .
 
 #Now you will check
 docker run -it bhumireddylalitha/my-sec-file:latest
@@ -77,7 +79,7 @@ welcome to our world
 
 #seeing docker image with command 
 docker images**
-
+```
 
 
   
@@ -85,19 +87,21 @@ docker images**
 ## Login into DockerHub
 
 ** #Run this command
-   docker login **
-
+```bash
+    docker login **
+```
 
 
 ### Now Push the Docker Image into DockerHub
-
-
-**docker push bhumireddylalitha/my-sec-file:latest**
-
+```bash
+docker push bhumireddylalitha/my-sec-file:latest
+```
 
 ## Now open Docker Hub in Brower
 
    ==> now image get push into docker Hub
+
+====================================================================================================
 
 ## 	Containers 
 A container is a lightweight, portable unit of software that packages an application along with everything it needs to run—such as code, libraries, dependencies, and configuration files. This ensures the application works consistently across different computing environments.
