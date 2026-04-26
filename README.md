@@ -26,14 +26,14 @@ permission denied while trying to connect to the docker API at unix:///var/run/d
 
  - **Now Run This command**
  
-sudo usermod -aG docker ubuntu
+=> sudo usermod -aG docker ubuntu
 
         👉 This command means:
-         => is used in Linux (like Ubuntu) to give a user permission to use
+         - is used in Linux (like Ubuntu) to give a user permission to use
          Docker without sudo.
  
-         => “Add the user ubuntu to the docker group, so they can run Docker
-         commands without using sudo.”
+         - Add the user ubuntu to the docker group, so they can run Docker
+         commands without using sudo.
 
 
 
