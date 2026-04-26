@@ -2,7 +2,7 @@
 ## Install Docker
 
 ### 1.Login into Ec2 Instances Then Run this Commands
--------------------------------------
+
 **#Update The Ec2 instances
 sudo apt update -y
 
@@ -13,9 +13,8 @@ sudo apt install docker.io -y
 docker --version
 
 #To Check Docker is Running Or Not 
-**sudo systemctl status docker
+sudo systemctl status docker**
 
--------------------------------------
 
 ### 2. Running the Docker
 
@@ -28,19 +27,19 @@ permission denied while trying to connect to the docker API at unix:///var/run/d
  
 sudo usermod -aG docker ubuntu
 
-      **👉 This command means:
+        👉 This command means:
          => is used in Linux (like Ubuntu) to give a user permission to use
          Docker without sudo.
  
          => “Add the user ubuntu to the docker group, so they can run Docker
-         commands without using sudo.”**
+         commands without using sudo.”
 
 
 
 ## 3. Local Deployment using Docker”
 
- ----------------------------------------
-git clone https://github.com/Tech-lalitha/Docker_file.git
+ 
+**git clone https://github.com/Tech-lalitha/Docker_file.git
 
   ubuntu@ip-172-31-19-46:~$ ls
   Docker_file
@@ -55,13 +54,13 @@ git clone https://github.com/Tech-lalitha/Docker_file.git
 
   ubuntu@ip-172-31-19-46:~/Docker_file/example$ cd first_files
   ubuntu@ip-172-31-19-46:~/Docker_file/example/first_files$ ls
-  Dockerfile  app.py
---------------------------------------------------
+  Dockerfile  app.py**
 
 
-      ==> Run This command
+
+       **Run This command**
  
-docker build -t bhumireddylalitha/my-sec-file:latest .
+**docker build -t bhumireddylalitha/my-sec-file:latest .
 
 #Now you will check
 docker run -it bhumireddylalitha/my-sec-file:latest
@@ -69,28 +68,28 @@ Hello World
 welcome to our world
 
 #seeing docker image with command 
-docker images
+docker images**
 
 
 
   
 
-Login into DockerHub
+## Login into DockerHub
 
-#Run this command
-   docker login
-
-
-
-Now Push the Docker Image into DockerHub
+** #Run this command
+   docker login **
 
 
-docker push bhumireddylalitha/my-sec-file:latest
+
+### Now Push the Docker Image into DockerHub
 
 
-Now open Docker Hub in Brower
+**docker push bhumireddylalitha/my-sec-file:latest**
 
-   now image get push into docker Hub
+
+## Now open Docker Hub in Brower
+
+   ==> now image get push into docker Hub
 
 ## 	Containers 
 A container is a lightweight, portable unit of software that packages an application along with everything it needs to run—such as code, libraries, dependencies, and configuration files. This ensures the application works consistently across different computing environments.
